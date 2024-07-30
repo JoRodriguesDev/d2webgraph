@@ -32,24 +32,26 @@ Bootstrap 5 Radar Chart
 # Como usar
 ```pascal
   var HTML := TModelChartFactory.New
-                                .Bar
-                                   .AddChartDataSet('2023')
-                                   .Opacity(0.5)
-                                     .AddChartData('Janeiro', 50, primary, primary)
-                                     .AddChartData('Fevereiro', 45, primary, primary)
-                                     .AddChartData('Março', 70, primary, primary)
-                                     .AddChartData('Abril', 75, primary, primary)
-                                     .AddChartData('Maio', 90, primary, primary)
-                                     .AddChartData('Junho', 30, primary, primary)
-                                   .&end
-                                   .AddChartDataSet('2024')
-                                   .Opacity(0.8)
-                                     .AddChartData('Janeiro', 55, success, success)
-                                     .AddChartData('Fevereiro', 50, success, success)
-                                     .AddChartData('Março', 82, success, success)
-                                     .AddChartData('Abril', 79, success, success)
-                                     .AddChartData('Maio', 80, success, success)
-                                     .AddChartData('Junho', 42, success, success)
-                                   .&end
-                                   .Generate;
+                                .Line
+                                .Height('150px')
+                                .Width('300px')
+                                  .AddChartDataSet('2023')
+                                  .Opacity(0.8)
+                                    .AddChartData('Janeiro', 50, primary, primary)
+                                    .AddChartData('Fevereiro', 45, primary, primary)
+                                    .AddChartData('Março', 70, primary, primary)
+                                    .AddChartData('Abril', 75, primary, primary)
+                                    .AddChartData('Maio', 90, primary, primary)
+                                    .AddChartData('Junho', 30, primary, primary)
+                                    .&end
+                                  .AddChartDataSet('2024')
+                                  .Opacity(0.5)
+                                    .AddChartData('Janeiro', 55, success, success)
+                                    .AddChartData('Fevereiro', 50, success, success)
+                                    .AddChartData('Março', 82, success, success)
+                                    .AddChartData('Abril', 79, success, success)
+                                    .AddChartData('Maio', 80, success, success)
+                                    .AddChartData('Junho', 42, success, success)
+                                    .&end
+                                .Generate;
 ```
