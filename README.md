@@ -32,8 +32,9 @@ Bootstrap 5 Radar Chart
 # Como usar
 ```pascal
   var HTML := TModelChartFactory.New
-                                 .Bar
+                                .Bar
                                    .AddChartDataSet('2023')
+                                   .Opacity(0.5)
                                      .AddChartData('Janeiro', 50, primary, primary)
                                      .AddChartData('Fevereiro', 45, primary, primary)
                                      .AddChartData('Março', 70, primary, primary)
@@ -42,6 +43,7 @@ Bootstrap 5 Radar Chart
                                      .AddChartData('Junho', 30, primary, primary)
                                    .&end
                                    .AddChartDataSet('2024')
+                                   .Opacity(0.8)
                                      .AddChartData('Janeiro', 55, success, success)
                                      .AddChartData('Fevereiro', 50, success, success)
                                      .AddChartData('Março', 82, success, success)
